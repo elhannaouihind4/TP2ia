@@ -1,0 +1,27 @@
+Réponses aux questions du partie 5 :
+
+Question 1 : Que représente chaque colonne de la matrice ?
+
+Chaque colonne représente un mot du vocabulaire extrait des phrases. La valeur dans la matrice indique le nombre de fois que ce mot apparaît dans une phrase.
+
+Question 2 : Quelles sont les limites du modèle Bag of Words ?
+
+Il ignore l'ordre des mots , Il peut créer un grand nombre de colonnes si le vocabulaire est très important , Il ne comprend pas le sens des mots.
+
+Question 3 : Que perd-on en supprimant l'ordre des mots ?
+
+On perd la syntaxe et le sens des phrases.
+
+Réponses aux questions du partie 6 :
+
+Question 1 : Quelle est la différence principale entre BoW et TF-IDF ?
+
+BoW compte simplement les occurrences d’un mot dans un document, TF-IDF attribue un poids aux mots selon leur fréquence dans un document et leur rareté dans l'ensemble des documents.
+
+Question 2 : Pourquoi les mots très fréquents ont-ils souvent un poids faible ?
+
+Parce qu'un mot présent dans presque tous les documents (« le », « de », « est ») permet généralement de moins bien distinguer un document des autres, Son IDF (Inverse Document Frequency) est donc proche de sa valeur minimale, ce qui réduit son poids final, même si son TF (Term Frequency) est élevé. À l’inverse, un mot rare est discriminant : il caractérise le document et reçoit un poids fort.
+
+Question 3 : Donnez un exemple concret où TF-IDF serait plus utile que BoW.
+
+Dans un système de recherche de documents, TF-IDF permet de mieux valoriser les mots spécifiques comme « football », « cinéma » ou « sport », plutôt que les mots très courants comme « est » ou « un ». Cela peut aider à retrouver les documents les plus pertinents.
